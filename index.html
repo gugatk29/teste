@@ -69,22 +69,29 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6">
+    <main>
 
         <!-- 2. Hero Section (Seção Principal) -->
-        <section class="min-h-[80vh] flex items-center py-20">
-            <div class="max-w-3xl">
-                <p class="text-indigo-600 dark:text-lime-400 mb-4 text-lg">Olá, somos a TecSoluções.</p>
-                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-4">Soluções de TI Completas para Sua Empresa Crescer.</h1>
-                <p class="text-lg md:text-xl mb-8">Otimizamos sua infraestrutura de tecnologia para que você possa focar no que realmente importa: o seu negócio.</p>
-                <a href="#servicos" class="bg-indigo-600 text-white font-semibold text-lg px-8 py-4 rounded-md hover:bg-indigo-700 dark:bg-lime-400 dark:text-indigo-900 dark:hover:bg-lime-500 transition-all inline-block">
-                    Conheça Nossos Serviços
-                </a>
+        <section class="relative min-h-[80vh] flex items-center">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-[-1]">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2070&auto=format&fit=crop" alt="Imagem de tecnologia abstrata com luzes neon" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white/80 dark:bg-slate-900/90"></div>
+            </div>
+            <div class="container mx-auto px-6 py-20">
+                <div class="max-w-3xl">
+                    <p class="text-indigo-600 dark:text-lime-400 mb-4 text-lg">Olá, somos a TecSoluções.</p>
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-4">Soluções de TI Completas para Sua Empresa Crescer.</h1>
+                    <p class="text-lg md:text-xl mb-8">Otimizamos sua infraestrutura de tecnologia para que você possa focar no que realmente importa: o seu negócio.</p>
+                    <a href="#servicos" class="bg-indigo-600 text-white font-semibold text-lg px-8 py-4 rounded-md hover:bg-indigo-700 dark:bg-lime-400 dark:text-indigo-900 dark:hover:bg-lime-500 transition-all inline-block">
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- 3. Services (Serviços) -->
-        <section id="servicos" class="py-20">
+        <section id="servicos" class="container mx-auto px-6 py-20">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 text-center mb-12">Nossos Serviços</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service Card 1 -->
@@ -123,36 +130,46 @@
         </section>
 
         <!-- 4. About Us (Sobre Nós) -->
-        <section id="sobre" class="py-20 flex flex-col md:flex-row items-center gap-12">
+        <section id="sobre" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
                 <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-4">Quem Somos</h2>
                 <p class="mb-4">Fundada em 2015, a TecSoluções nasceu com a missão de descomplicar a tecnologia para pequenas e médias empresas. Acreditamos que uma infraestrutura de TI sólida é a base para o crescimento sustentável de qualquer negócio.</p>
                 <p>Nossa equipe é formada por técnicos certificados e apaixonados por inovação, prontos para oferecer um atendimento rápido, personalizado e eficiente.</p>
             </div>
             <div class="md:w-1/2">
-                <img src="https://placehold.co/600x400/E2E8F0/1E293B?text=Nossa+Equipe" alt="Foto da equipe TecSoluções" class="rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Equipe de TI colaborando em um escritório moderno" class="rounded-lg shadow-lg aspect-video object-cover">
             </div>
         </section>
 
         <!-- 5. Testimonials (Depoimentos) -->
-        <section id="depoimentos" class="py-20">
+        <section id="depoimentos" class="container mx-auto px-6 py-20">
             <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 text-center mb-12">O que nossos clientes dizem</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-lg shadow-lg">
-                    <p class="italic mb-4">"A parceria com a TecSoluções foi um divisor de águas para nós. O suporte é incrivelmente rápido e eficiente, resolvem tudo em minutos!"</p>
-                    <p class="font-bold text-slate-900 dark:text-slate-100">- João Silva</p>
-                    <p class="text-sm text-indigo-600 dark:text-lime-400">CEO, Empresa Criativa</p>
+                    <p class="italic mb-6">"A parceria com a TecSoluções foi um divisor de águas para nós. O suporte é incrivelmente rápido e eficiente, resolvem tudo em minutos!"</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop" alt="Avatar de João Silva">
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-slate-100">João Silva</p>
+                            <p class="text-sm text-indigo-600 dark:text-lime-400">CEO, Empresa Criativa</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-lg shadow-lg">
-                    <p class="italic mb-4">"Finalmente encontramos uma empresa de TI que entende nossas necessidades. A segurança da nossa rede melhorou 100%."</p>
-                    <p class="font-bold text-slate-900 dark:text-slate-100">- Maria Oliveira</p>
-                    <p class="text-sm text-indigo-600 dark:text-lime-400">Diretora, Comércio Inovador</p>
+                    <p class="italic mb-6">"Finalmente encontramos uma empresa de TI que entende nossas necessidades. A segurança da nossa rede melhorou 100%."</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4 object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" alt="Avatar de Maria Oliveira">
+                        <div>
+                            <p class="font-bold text-slate-900 dark:text-slate-100">Maria Oliveira</p>
+                            <p class="text-sm text-indigo-600 dark:text-lime-400">Diretora, Comércio Inovador</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 6. Contact (Contato) -->
-        <section id="contato" class="py-20">
+        <section id="contato" class="container mx-auto px-6 py-20">
             <div class="text-center max-w-2xl mx-auto">
                 <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-4">Entre em Contato</h2>
                 <p class="mb-8">Tem alguma dúvida ou precisa de um orçamento? Preencha o formulário abaixo ou nos envie uma mensagem. Estamos prontos para ajudar!</p>
